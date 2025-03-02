@@ -1,8 +1,5 @@
 pipeline {
-    agent {
-     image 'node:18-alpine'
-     args '-v /c/ProgramData/Jenkins/workspace/test pipeline 2/:/app -w /app'
-    }
+    agent any
 
     stages {
 
