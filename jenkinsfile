@@ -1,9 +1,10 @@
 pipeline {
+    agent any
     stages {
 
         stage('Install Dependencies') {
             steps {
-                sh 'ls'
+                sh 'echo "Installing dependencies"'
                 sh 'npm install'
             }
         }
